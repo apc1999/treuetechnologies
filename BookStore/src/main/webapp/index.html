@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Store</title>
+<style>
+  /* Reset some default styles */
+  body, h1, h2, p, form, label, input {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Center the form */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  /* Style the form container */
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+
+  /* Style labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  /* Style text inputs */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  /* Style submit button */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  /* Center the form horizontally on smaller screens */
+  @media (max-width: 500px) {
+    form {
+      width: 80%;
+    }
+  }
+</style>
+</head>
+<body>
+<div align="center">
+<h1>WELCOME TO ONLINE BOOK STORE</h1>
+</div>
+  <form action="loginlink" method="get">
+    <label>ENTER USERNAME</label>
+    <input type="text" name="username">
+    <label>ENTER PASSWORD</label>
+    <input type="password" name="password">
+    <input type="submit" value="LOGIN">
+  </form>
+</body>
+</html>
