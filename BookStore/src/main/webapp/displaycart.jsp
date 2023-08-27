@@ -61,7 +61,7 @@
         <p>Price: <%= b.getBookPrice() %></p>
         <p>Category: <%= b.getBookCategory() %></p>
         <p>Quantity: <%= b.getQty() %></p>
-        <form action="bookinglink" method="post"> 
+        <form action="bookinglink" method="get"> 
             <input type="hidden" name="bookId" value="<%= b.getBookId() %>">
             <input type="hidden" name="bookPrice" value="<%= b.getBookPrice() %>">
             <input type="submit" value="Buy">
